@@ -1,0 +1,45 @@
+.popup2 {
+    position: fixed;
+    top: 2rem;
+    left: 103rem;
+    padding: 20px;
+    background-color: aliceblue;
+}
+
+.formattext :hover {
+    color: purple;
+    background-color: orange;
+}
+
+.textcopy :hover {
+    color: purple;
+    background-color: lightgreen;
+}
+
+.disabletextcopy button {
+    background-color: #cccccc;
+    color: #666666;
+
+}
+
+.textclear :hover {
+    color: purple;
+    background-color: red;
+}
+
+.disabletextclear button {
+    background-color: #cccccc;
+    color: #666666;
+}
+
+.disableformattext button {
+    background-color: #cccccc;
+    color: #666666;
+}
+
+
+[contentEditable=true]:empty:not(:focus):before {
+    content: attr(data-text);
+    font-style: italic;
+
+}
